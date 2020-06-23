@@ -1,0 +1,14 @@
+<!--
+ 1、需要给input标签邦定input事件
+ 2、通过事件源对象获取值
+   e.detail.value
+   赋值
+   this.setData({
+     num:e.detail.value
+   })
+ bindinput
+-->
+<input type="text" bindinput="handleInput"/>
+<view>
+{{number}}
+</view>

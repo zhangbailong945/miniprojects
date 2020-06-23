@@ -1,15 +1,59 @@
 {
   "pages":[
+    "pages/demo2/demo2",
+    "pages/demo1/demo1",
     "pages/index/index",
+    "pages/category/category",
+    "pages/tags/tags",
+    "pages/search/search",
+    "pages/mine/mine",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"dark", 
-    "navigationBarBackgroundColor": "#0093FF",
+    "navigationBarBackgroundColor": "#ffb280",
     "navigationBarTitleText": "minidemo1",
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh":true,
     "backgroundColor":"#234555"
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/png/home.png",
+      "selectedIconPath": "images/png/_home.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "images/png/cascades.png",
+      "selectedIconPath": "images/png/_cascades.png"
+    },
+    {
+      "pagePath": "pages/tags/tags",
+      "text": "标签",
+      "iconPath": "images/png/tag.png",
+      "selectedIconPath": "images/png/_tag.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "images/png/search_list.png",
+      "selectedIconPath": "images/png/_search_list.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/png/profile.png",
+      "selectedIconPath": "images/png/_profile.png"
+    }
+  ],
+  "color": "#000000",
+  "selectedColor": "#e67e22",
+  "borderStyle": "white",
+  "backgroundColor": "#ffffff"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
