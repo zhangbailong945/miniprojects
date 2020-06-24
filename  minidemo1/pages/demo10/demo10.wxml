@@ -1,0 +1,11 @@
+<!--
+ richText 富文本标签
+ 1 nodes 属性来实现
+   1-1 接受字符串
+   1-2 接受数组对象
+-->
+
+<rich-text class="" nodes="{{html}}">
+    
+</rich-text>
+  

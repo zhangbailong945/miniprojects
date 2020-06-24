@@ -20,25 +20,15 @@
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
-<<<<<<< HEAD
-=======
-		"compileHotReLoad": false,
->>>>>>> 7fc682ff1ec7ca96601923dac95d1cf6c118406f
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-<<<<<<< HEAD
-		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"compileHotReLoad": false,
-		"useIsolateContext": true
-=======
 		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
->>>>>>> 7fc682ff1ec7ca96601923dac95d1cf6c118406f
+		"useCompilerModule": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",

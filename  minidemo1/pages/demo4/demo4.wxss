@@ -1,0 +1,6 @@
+/* pages/demo3/demo3.wxss */
+/*
+1.引入wxss代码 通过@import 
+2.路径只能是相对路径
+*/
+@import "../../styles/common.wxss";

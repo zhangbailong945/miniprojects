@@ -1,0 +1,12 @@
+/* pages/demo5/demo5.wxss */
+/* 定义less变量*/
+text {
+  color: yellow;
+}
+view .view1 text {
+  color: red;
+}
+/*导入less*/
+view {
+  color: green;
+}

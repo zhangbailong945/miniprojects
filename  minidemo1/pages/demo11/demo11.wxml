@@ -1,0 +1,74 @@
+<!--
+button标签
+1.外观属性
+ 1-1. size
+  1-1-1. default 默认大小
+  1-1-2. mini 小尺寸
+ 1-2. type 颜色
+  1-2-1 defualt 灰色
+  1-2-2 primary 绿色
+  1-2-3 warn 红色
+ 1-3. plain 按钮是否镂空，背景色透明
+ 1-4. loading 
+-->
+
+<button size='default'>
+默认按钮
+</button>
+
+<button size='mini'>
+mini按钮
+</button>
+
+<button size='mini' type="default">
+灰色按钮
+</button>
+
+<button size='mini' type="primary">
+绿色按钮
+</button>
+
+<button size='mini' type="warn">
+红色按钮
+</button>
+
+<button size='mini' type="warn" plain>
+红色镂空按钮
+</button>
+
+<button size='mini' type="primary" loading>
+绿色等待按钮
+</button>
+
+<!--
+  button 开发能力
+1. contact 打开客服对话
+open-type:
+  1-1. contact 直接打开 客服对话功能
+  1-2. share 转发当前的小程序 到微信朋友中 不能分享到朋友圈
+  1-3. getPhoneNumber 获取当前用户的手机号码信息 必须是企业微信号码
+    1-3-1. 绑定一个事件 bindgetphnenumber
+    1-3-2. 在事件的回调函数中 通过参数来获取信息
+    1-3-3. 需要用户自己搭建小程序的后台服务器，在后台服务器中进行解析手机号码
+
+  1-4. getUserInfo 获取当前用户的个人信息
+    1-4-1 绑定一个事件 bindgetuserinfo
+    1-4-2 可以直接获取用户信息 不存在加密
+  1-5. launchApp 在小程序当中 直接打开app
+    1-5-1 需要现在 app中 通过app的某个链接 打开小程序
+    1-5-2 在小程序中 再通过这个功能 重新打开app
+    1-5-3 找到激动的app和京东的小程序
+  1-6. openSetting 打开小程序中的内置的 授权功能
+    1-6-1 授权页面 只会出现 用户曾经点击过的全新
+  1-7. feedback 打开小程序内置的反馈功能
+    1-7-1 只能通过真机来实现
+
+-->
+<button open-type="contact" >contact</button>
+<button open-type="share" >share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp" >launchApp</button>
+<button open-type="openSetting" >openSetting</button>
+<button open-type="feedback" >feedback</button>
+  

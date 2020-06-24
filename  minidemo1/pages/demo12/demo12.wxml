@@ -1,0 +1,17 @@
+<!--
+ icon 小程序中的字体图标
+ 1 type 图标类型
+    1-1 success
+ 2 size 图标的大小
+ 3 color 图标的颜色
+-->
+<icon class="" type="success" size="60" color=""></icon>
+<icon class="" type="success_no_circle" size="60" color=""></icon>
+<icon class="" type="info" size="60" color=""></icon>
+<icon class="" type="warn" size="60" color=""></icon>
+<icon class="" type="waiting" size="60" color=""></icon>
+<icon class="" type="cancel" size="60" color=""></icon>
+<icon class="" type="download" size="60" color=""></icon>
+<icon class="" type="search" size="60" color=""></icon>
+<icon class="" type="clear" size="60" color=""></icon>
+  

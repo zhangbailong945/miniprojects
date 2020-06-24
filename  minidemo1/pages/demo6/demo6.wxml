@@ -1,0 +1,9 @@
+<!--
+ 1.文本标签
+ 2.只能嵌套自己
+ 3.长按复制
+ 4.对文本内容解码
+-->
+<text selectable decode>
+text标签&nbsp;123
+</text>

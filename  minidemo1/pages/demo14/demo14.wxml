@@ -1,0 +1,38 @@
+<!--
+ checkbox 标签
+-->
+
+<checkbox-group bindchange="handleHobbyChange">
+    <checkbox class="" value="ball"  color="">
+        打篮球
+    </checkbox>
+     <checkbox class="" value="game"  color="">
+        玩游戏
+    </checkbox>
+     <checkbox class="" value="run"  color="">
+        跑步
+    </checkbox>
+     <checkbox class="" value="book"  color="">
+        看书
+    </checkbox> 
+</checkbox-group>
+<view>
+您的爱好是：
+<text class="" wx:for="{{hobbies}}">
+    {{item}}
+</text>
+  
+</view>
+
+<checkbox-group bindchange="handleFruitsChange">
+    <checkbox class="" wx:for="{{list}}" wx:key="id" value="{{item.value}}">
+    {{item.name}}
+    </checkbox>
+</checkbox-group>
+
+<view>
+您选择水果是：
+<text class="" wx:for="{{fruits}}">
+    {{item}}
+</text>
+</view>

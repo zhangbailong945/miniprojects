@@ -1,0 +1,33 @@
+<!--
+swiper 
+1.轮播图外层容器 swiper
+2.每一个轮播项 swiper-item
+3.swiper标签 存在默认样式
+ 3-1 with 100%
+ 3-2 height 150px
+ 3-3 swiper 高度 无法实现内容撑开
+4.先找出来 原图的宽度和高度 等比例 给swiper定宽度和高度
+  原图 1125 * 352px
+  swiper宽度 /swiper 高度=原图的宽度 /原图的高度
+5.autoplay 自动轮播
+6 interval 毫秒
+7.circular 衔接图片轮播
+8.indicator-dots 显示 指示器
+9.indicator-color 显示颜色
+10.indicator-active-color 选中显示颜色
+-->
+<swiper autoplay interval="1000" circular indicator-dots indicator-color="#134234" indicator-active-color="#ff0094">
+    <swiper-item class="" item-id="">
+        <image class="" src="https://img.alicdn.com/tfs/TB1Q3oIK.z1gK0jSZLeXXb9kVXa-750-235.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />    
+    </swiper-item>
+
+    <swiper-item class="" item-id="">
+        <image class="" src="https://img.alicdn.com/tfs/TB1zhamKVY7gK0jSZKzXXaikpXa-1125-350.jpg_960x960Q75s50.jpg_.webp" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    </swiper-item>
+    
+    <swiper-item class="" item-id="">
+        <image class="" src="https://img.alicdn.com/tfs/TB1ya9tK.H1gK0jSZSyXXXtlpXa-1125-350.png_960x960Q75s50.jpg_.webp" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    </swiper-item>
+      
+</swiper>
+  

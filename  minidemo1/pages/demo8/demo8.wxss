@@ -1,0 +1,10 @@
+/* pages/demo8/demo8.wxss */
+
+swiper{
+    witdth:100%;
+    height:calc(100vw*299/960);
+}
+
+image{
+    with:100%；
+}

@@ -1,0 +1,26 @@
+<!--
+navigator 导航组件
+1.url 跳转的页面路径 绝对/相对
+2.块级元素 默认会换行 可以直接加宽度和高度
+3.target 要跳转到当前小程序还是其他小程序 默认值self,其他minprogram
+4.open-type
+  4-1. navigate,跳转应用的某个页面，不能调到tabbar页面
+  4-2. redirect 关闭当前页面 重定向到其他页面，不能跳到tabbar
+  4-3. switchTab 跳到tabbar页面，关闭其他所有非tabBar页面
+  4-4. reLaunch 关闭所有页面，打开到应用内的某个页面
+-->
+<navigator class="" target="" url="/pages/demo8/demo8" hover-class="navigator-hover" open-type="navigate">
+跳转轮播图片页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="navigate">
+跳转tabbar页面
+</navigator>
+<navigator class="" target="" url="/pages/demo8/demo8" hover-class="navigator-hover" open-type="redirect">
+重定向其他页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="switchTab">
+跳到tabbar页面，关闭其他所有非tabBar页面
+</navigator>
+<navigator class="" target="" url="/pages/index/index" hover-class="navigator-hover" open-type="reLaunch">
+reLaunch 
+</navigator>

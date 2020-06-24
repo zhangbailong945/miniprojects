@@ -1,5 +1,17 @@
 {
   "pages":[
+    "pages/demo15/demo15",
+    "pages/demo14/demo14",
+    "pages/demo13/demo13",
+    "pages/demo12/demo12",
+    "pages/demo11/demo11",
+    "pages/demo10/demo10",
+    "pages/demo9/demo9",
+    "pages/demo8/demo8",
+    "pages/demo7/demo7",
+    "pages/demo6/demo6",
+    "pages/demo5/demo5",
+    "pages/demo4/demo4",
     "pages/demo3/demo3",
     "pages/demo2/demo2",
     "pages/demo1/demo1",
