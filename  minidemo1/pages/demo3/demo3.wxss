@@ -1,0 +1,13 @@
+/* pages/demo3/demo3.wxss */
+/*
+1rpx=2px
+750rpx=375px
+calc() 计算像素
+750rpx中间不能留空额
+*/
+view{
+  width: calc(750rpx*100/375);
+  height:200rpx;
+  font-size: 40rpx;
+  background-color: aqua;
+}

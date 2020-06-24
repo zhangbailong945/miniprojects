@@ -1,24 +1,13 @@
-// pages/demo2/demo2.js
+// pages/demo3/demo3.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    number:0
+
   },
-  handleInput:function(e){
-    this.setData({
-      number:e.detail.value
-    })
-  },
-  handletap:function(e){
-    //console.log(e)
-    const operation=e.currentTarget.dataset.operation;
-    this.setData({
-      number:this.data.number+operation
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
