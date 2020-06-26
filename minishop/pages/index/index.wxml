@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+    <text class="iconfont icon-shoucang1">
+        首次
+    </text>
+</view>

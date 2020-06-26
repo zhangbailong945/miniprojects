@@ -1,0 +1,101 @@
+<!--pages/demo16/demo16.wxml-->
+
+<navigator open-type="navigate" url="/pages/demo15/demo15">
+demo15
+</navigator>
+
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+
+
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>
+<navigator open-type="redirect" url="/pages/demo14/demo14">
+demo14
+</navigator>

@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/demo16/demo16",
     "pages/demo15/demo15",
     "pages/demo14/demo14",
     "pages/demo13/demo13",
@@ -51,7 +52,7 @@
       "selectedIconPath": "images/png/_tag.png"
     },
     {
-      "pagePath": "pages/search/search",
+      "pagePath": "pages/demo16/demo16",
       "text": "搜索",
       "iconPath": "images/png/search_list.png",
       "selectedIconPath": "images/png/_search_list.png"

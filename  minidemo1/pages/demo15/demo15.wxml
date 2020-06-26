@@ -1,2 +1,17 @@
-<!--pages/demo15/demo15.wxml-->
-<text>pages/demo15/demo15.wxml</text>
+<!--
+
+   1.父组件（页面文件） 向子组件传递数据
+    1-1 在子组件进行接收数据
+    1-2 把这个数据当成data的
+  
+  2.子向父传递数据 通过事件的方式传递
+    2-1 在子组件的标签上加入 一个自定义事件
+
+  
+  --> 
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+<block wx:if="{{tabs[0].isActive}}">0</block>
+<block wx:if="{{tabs[1].isActive}}">1</block>
+<block wx:if="{{tabs[2].isActive}}">2</block>
+<block wx:if="{{tabs[3].isActive}}">3</block>
+</Tabs>
