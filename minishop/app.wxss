@@ -16,7 +16,13 @@ page,view,text,swiper,swiper-item,image,navigator{
 
 page{
     /*定义主题颜色*/
-    --themeColor:"#1296db";
-    /*定义字体大小*/
+    --themeColor:#1296db;
+    /*定义统一字体大小*/ 
+    /*
+    1px=1rpx
+    14px=28rpx
+    */
     font-size:28rpx;
+
+
 }
