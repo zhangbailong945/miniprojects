@@ -1,1 +1,45 @@
-/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.cascades {
+  height: 100%;
+}
+.cascades .cascades_container {
+  /*在less中使用calc函数 需要原样输出~''*/
+  height: calc(100vh-90rpx);
+  display: flex;
+}
+.cascades .cascades_container .left_menu {
+  /*子项 100% flex*/
+  flex: 2;
+}
+.cascades .cascades_container .left_menu .menu_item {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cascades .cascades_container .left_menu .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cascades .cascades_container .right_content {
+  flex: 5;
+}
+.cascades .cascades_container .right_content .goods_group .goods_title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+.cascades .cascades_container .right_content .goods_group .goods_title .delimiter {
+  color: #fff;
+  padding: 0 10px;
+}
+.cascades .cascades_container .right_content .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cascades .cascades_container .right_content .goods_group .goods_list navigator {
+  width: 33.33%;
+}
