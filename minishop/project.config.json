@@ -4,14 +4,19 @@
 		"ignore": []
 	},
 	"setting": {
+<<<<<<< HEAD
 		"urlCheck": true,
 		"scopeDataCheck": false,
 		"coverView": true,
+=======
+		"urlCheck": false,
+>>>>>>> 20266c5c439aa75652f6261a624d0f6b69663a8c
 		"es6": true,
 		"postcss": true,
 		"compileHotReLoad": false,
 		"preloadBackgroundData": false,
 		"minified": true,
+<<<<<<< HEAD
 		"autoAudits": false,
 		"newFeature": true,
 		"uglifyFileName": false,
@@ -22,6 +27,23 @@
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false,
 		"showShadowRootInWxmlPanel": true
+=======
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+>>>>>>> 20266c5c439aa75652f6261a624d0f6b69663a8c
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.3",
@@ -42,13 +64,28 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "分类页面",
+					"pathName": "pages/category/index",
+					"scene": null
+				}
+			]
 		}
 	}
 }

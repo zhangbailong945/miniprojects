@@ -1,6 +1,67 @@
 <!--index.wxml-->
-<view class="container">
-    <text class="iconfont icon-shoucang1">
-        首次
-    </text>
+<view class="mns_inndex">
+    <!--搜索框 开始-->
+    <SearchInput></SearchInput>
+    <!--搜索框 结束-->
+    <!--轮播图片 开始-->
+    <view class="index_swiper" >
+        <swiper bindchange="" autoplay indicator-dots circular>
+            <swiper-item 
+            class=""
+            item-id=""
+            wx:for="{{swiperList}}"
+            WX:key="goods_id"
+            >
+            <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <image class="" src="{{item.image_src}}" mode="widthFix" />
+            </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--轮播图 结束-->
+
+    <!--导航 开始-->
+    <view class="index_category">
+        <navigator
+        wx:for="{{categoryList}}"
+        wx:key="name"
+        >
+        <image class="" src="{{item.image_src}}" mode="widthFix" />
+          
+        </navigator>
+    </view>
+    <!--导航 结束-->
+    <!--楼层 开始-->
+    <view class="index_floor">
+        <view 
+        class="floor_group"
+        wx:for="{{floorList}}"
+        wx:for-item="item1"
+        wx:for-index="index1"
+        wx:key="floor_title"
+        >
+        <!--标题-->
+            <view class="floor_title">
+                <image class="" src="{{item1.floor_title.image_src}}" mode="widthFix" />
+                <view class="floor_list">
+                    <navigator 
+                    class="" 
+                    url=""  
+                    open-type="navigate"
+                    wx:for="{{item1.product_list}}"
+                    wx:for-item="item2"
+                    wx:for-index="index2"
+                    wx:key="name"
+                    >
+                    <image class="" src="{{item2.image_src}}" mode="{{index2==0?'widthFix':'scaleToFill'}}" />
+                      
+                    </navigator>
+                </view>
+            </view>
+        <!--内容-->
+        </view>
+    </view>
+    <!--楼层 结束-->
+      
+      
 </view>
