@@ -56,28 +56,28 @@ Page({
   },
   //获取轮播图数据
   getSwiperList:function(){
-    request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata"})
+    request({url:"/home/swiperdata"})
     .then(result=>{
       this.setData({
-        swiperList:result.data.message
+        swiperList:result
       })
     })
   },
   //获取分类数据
   getCategoryList:function(){
-    request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/catitems"})
+    request({url:"/home/catitems"})
     .then(result=>{
       this.setData({
-        categoryList:result.data.message
+        categoryList:result
       })
     })
   },
   //获取轮播图数据
   getFloorList:function(){
-    request({url:"https://api-hmugo-web.itheima.net/api/public/v1/home/floordata"})
+    request({url:"/home/floordata"})
     .then(result=>{
       this.setData({
-        floorList:result.data.message
+        floorList:result
       })
     })
   }
