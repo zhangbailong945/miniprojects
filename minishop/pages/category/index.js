@@ -1,5 +1,5 @@
 // pages/category/index.js
-import regeneratorRuntime from "../../lib/runtime/runtime.js";
+import regeneratorRuntime from "../../lib/runtime/runtime";
 import {request} from "../../request/index.js";
 Page({
 
