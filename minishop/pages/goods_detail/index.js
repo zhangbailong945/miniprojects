@@ -9,22 +9,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodsObj:{}
+    goodsObj:{},
+    isCollect:false
   },
   GoodsInfo:{},
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const {goods_id}=options;
-    this.getGoodsDetail(goods_id);
+
 
   },
   /*获取商品的详情数据 */
   async getGoodsDetail(goods_id){
     const goodsObj=await request({url:"/goods/detail",data:{goods_id}});
     this.GoodsInfo=goodsObj;
+    //获取缓存中的 收藏数组
+    let collect=wx.getStorageSync("collect")||[];
+    let isCollect=collect.some(v=>v.goods_id===this.GoodsInfo.goods_id);
     this.setData({
       goodsObj:{
         goods_name:goodsObj.goods_name,
@@ -32,8 +36,10 @@ Page({
         //iphone部分手机 不识别 webp 图片格式
         //确保后台存在 1.webp 1.jpg
         goods_introduce:goodsObj.goods_introduce.replace(/\.webp/g,'.jpg'),
-        pics:goodsObj.pics
-      }
+        pics:goodsObj.pics,
+        
+      },
+      isCollect:isCollect
     })
   },
   /**
@@ -47,6 +53,48 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    let pages =  getCurrentPages();
+    let currentPage=pages[pages.length-1];
+    let options=currentPage.options;
+    const {goods_id}=options;
+    this.getGoodsDetail(goods_id);
+
+      
+  },
+  //点击收藏
+  handleCollect(){
+    //先获取缓存中的收藏数组
+    let isCollect=false;
+    let collect=wx.getStorageSync("collect")||[];
+    let index=collect.findIndex(v=>v.goods_id===this.GoodsInfo.goods_id);
+    console.log(index);
+    if(index!==-1){
+      collect.splice(index,1);
+      isCollect=false;
+      wx.showToast({
+        title: '取消成功',
+        icon: 'success',
+        image: '',
+        duration: 1500,
+        mask: true
+      });
+        
+    }
+    else{
+      collect.push(this.GoodsInfo);
+      isCollect=true;
+      wx.showToast({
+        title: '收藏成功',
+        icon: 'success',
+        image: '',
+        duration: 1500,
+        mask: true
+      });
+    }
+    wx.setStorageSync("collect",collect);
+    this.setData({
+      isCollect:isCollect
+    });
 
   },
 

@@ -6,7 +6,7 @@ export const request=(params)=>{
 
     if(params.url.includes('/my/')){
         //重新拼接 带上token
-        header['Authorization']=wx.wx.getStorageSync("token");
+        header['Authorization']=wx.getStorageSync("token");
     }
 
     ajaxTimes++;
