@@ -5,14 +5,12 @@
     <!--搜索框 结束-->
     <!--轮播图片 开始-->
     <view class="index_swiper" >
-        <swiper bindchange="" autoplay indicator-dots circular>
+        <swiper autoplay indicator-dots circular>
             <swiper-item 
-            class=""
-            item-id=""
             wx:for="{{swiperList}}"
             WX:key="goods_id"
             >
-            <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+            <navigator url="/pages/category/index?goods_id=14422">
                 <image class="" src="{{item.image_src}}" mode="widthFix" />
             </navigator>
             </swiper-item>
@@ -25,6 +23,8 @@
         <navigator
         wx:for="{{categoryList}}"
         wx:key="name"
+        url="/pages/category/index"
+        open-type="switchTab"
         >
         <image class="" src="{{item.image_src}}" mode="widthFix" />
           
@@ -46,7 +46,7 @@
                 <view class="floor_list">
                     <navigator 
                     class="" 
-                    url=""  
+                    url="{{item1.navigator_url}}"  
                     open-type="navigate"
                     wx:for="{{item1.product_list}}"
                     wx:for-item="item2"
